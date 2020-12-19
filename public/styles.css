@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(61, 61, 61);
+  color: antiquewhite;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+#nav {
+  padding: 10px;
+  background-color: rgb(56, 56, 56);
+}
+
+#nav a {
+  font-weight: bold;
+  font-size: 13px;
+  color: rgb(201, 201, 201);
+  margin: 0 10px;
+}
+
+#nav a.router-link-exact-active {
+  color: #c48106;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1400px;
+  padding: 30px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 14;
+}
+
+.subtitle {
+  font-size: 11px;
+  color: #969696;
+}
