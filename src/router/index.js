@@ -29,6 +29,11 @@ const routes = [
     name: 'Best',
     component: () => import('../views/Best.vue')
   },
+  {
+    path: '/show',
+    name: 'Show',
+    component: () => import('../views/Show.vue')
+  },
 ]
 
 const router = new VueRouter({

@@ -47,10 +47,10 @@ export default {
         axios.get(baseApi + 'item/' + newlist[i] + '.json')
         .then(response => {
         this.itemdata.push(response.data);
-      })
+      }).catch(error => console.log(error))
       }
        
-    })
+    }).catch(error => console.log(error))
     }
 }
 }

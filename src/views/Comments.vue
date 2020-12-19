@@ -2,7 +2,7 @@
 <div>
   <div class="container">
     <ul>
-      <li class="w-listtyle" v-for="(item,index) in itemdata" v-bind:key='index'>
+      <li class="w-liststyle" v-for="(item,index) in itemdata" v-bind:key='index'>
         <div class="comment-subtitle">
           {{ item.by }} {{ item.time }} | on: comment parent
         </div>
@@ -23,7 +23,7 @@ import axios from 'axios'
 const baseApi = 'https://hacker-news.firebaseio.com/v0/';
 
 export default {
-  name: 'Home',
+  name: 'Comments',
   data() {
     return {
       itemdata:[],
@@ -48,9 +48,9 @@ export default {
             if( comments == "comment" ) {
               this.itemdata.push(items);
             }
-          })
+          }).catch(error => console.log(error))
         }
-    })
+    }).catch(error => console.log(error))
     },
     timeStamp() {
       const currentTime = new Date().getTime();

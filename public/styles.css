@@ -69,6 +69,11 @@ ul li {
   cursor: pointer;
 }
 
+.subtitle-jobs {
+  font-size: 11px;
+  color: #969696;
+}
+
 .subtitle-comment:hover {
   text-decoration: underline;
 }
@@ -78,6 +83,6 @@ ul li {
   color: #969696;
 }
 
-.w-listtyle {
+.w-liststyle {
   list-style: square;
 }
