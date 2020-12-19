@@ -1,5 +1,6 @@
 <template>
 <div>
+  
   <div class="container">
     <ul>
       <li v-for="(item,index) in itemdata" v-bind:key='index'>
@@ -31,10 +32,9 @@ export default {
     return {
       itemdata:[],
     }
-  },
+  },  
   mounted() {
     this.getNewStories();
-
   },
   methods: {
     getNewStories() {

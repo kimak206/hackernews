@@ -12,6 +12,10 @@ ul li {
   list-style: none;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -67,4 +71,13 @@ ul li {
 
 .subtitle-comment:hover {
   text-decoration: underline;
+}
+
+.comment-subtitle {
+  font-size: 11px;
+  color: #969696;
+}
+
+.w-listtyle {
+  list-style: square;
 }

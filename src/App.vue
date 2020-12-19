@@ -2,12 +2,10 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">New</router-link> 
-      <router-link to="/comment">Comment</router-link>
-      <router-link to="/ask">Ask</router-link>
-      <router-link to="/how">How</router-link>
-      <router-link to="/show">Show</router-link>
-      <router-link to="/jobs">Jobs</router-link>
-      <router-link to="/submit">Submit</router-link>
+      <router-link to="Comments">Comment</router-link>
+      <router-link to="Ask">Ask</router-link>
+      <router-link to="Show">Show</router-link>
+      <router-link to="Jobs">Jobs</router-link>
     </div>
     <router-view/>
   </div>
