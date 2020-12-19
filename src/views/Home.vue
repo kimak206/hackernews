@@ -1,16 +1,17 @@
 <template>
 <div>
   <div class="container">
-    <ol>
+    <ul>
       <li v-for="(item,index) in itemdata" v-bind:key='index'>
         <div class="title">
-          {{ item.title }}
+            {{ index+1 }}.  <a v-bind:href="item.url" target=_blank class="title">{{ item.title }}</a>
         </div>
+        
         <div class="subtitle">
-          {{ item.score }} points by {{ item.by }}
+          {{ item.score }} points by '{{ item.by }}' | <div class="subtitle-comment">{{ item.descendants }} Comments</div>
         </div>
       </li>
-    </ol>
+    </ul>
   </div>
 
   
@@ -28,12 +29,10 @@ export default {
   name: 'Home',
   data() {
     return {
-      list:'',
       itemdata:[],
-      stories:'',
     }
   },
-  created() {
+  mounted() {
     this.getNewStories();
 
   },
@@ -41,11 +40,9 @@ export default {
     getNewStories() {
       axios.get(baseApi + 'newstories.json')
       .then(response => {
-      this.list = response.data;
-      console.log(this.list)
-      var newlist = this.list;
-      
-      for(var i=0; i < newlist.length; i++) {
+      var newlist = response.data;
+      // console.log(this.list)
+      for(var i=0; i < 50; i++) {
 
         axios.get(baseApi + 'item/' + newlist[i] + '.json')
         .then(response => {

@@ -4,10 +4,12 @@
   box-sizing: border-box;
   background-color: rgb(61, 61, 61);
   color: antiquewhite;
+  text-decoration: none;
 }
 
-ol li {
+ul li {
   margin-bottom: 5px;
+  list-style: none;
 }
 
 #app {
@@ -43,10 +45,26 @@ ol li {
 }
 
 .title {
-  font-size: 14;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.title:hover {
+  color: #c48106;
 }
 
 .subtitle {
   font-size: 11px;
   color: #969696;
+  margin-left: 15px;
+}
+
+.subtitle-comment {
+  display: inline;
+  color: #969696;
+  cursor: pointer;
+}
+
+.subtitle-comment:hover {
+  text-decoration: underline;
 }
